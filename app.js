@@ -1,16 +1,14 @@
-// 1.Funksiya yasang, ushbu funksiya 2ta argument qabul qilsin va ularning yig’indisini     qaytarib bersin. 
+// 1.Funksiya yasang, ushbu funksiya 2ta argument qabul qilsin va ularning yig’indisini     qaytarib bersin.
 // function sum(a,b){
 //   return a+b;
 // }
 // console.log(sum(-2,-5));
-
 
 // 2.Minutlarni butun son sifatida qabul qilib, uni sekundlarga o’girib beradigan funksiya yasang.
 // function calc(minutes){
 //     return minutes*60;
 // }
 // console.log(calc(2));
-
 
 // 3.Funksiya butun son qabul qiladi. Funksiya ushbu butun sondan keyingi sonni qaytarsin.
 // function integer(int){
@@ -349,11 +347,12 @@
 // console.log(bolinsin100(200));
 
 // 40.Shunday funksiya yasangki, ushbu funksiya stringni ichida nechta belgi borligini aytsin. Bunda length propertisidan foydalanmang va rekursiv funksiya ishlating.
-// let counter = 0;
-// function uzunlik(str) {
-//   for (let i = 1; i <= str.length; i++) {
-//     counter++;
-//   }
-//   console.log(counter);
-// }
-// uzunlik("Saidraxim");
+let counter = 0;
+function uzunlik(str) {
+  let oxirgi = str.at(-1);
+  for (let i = 0; i <= str.lastIndexOf(oxirgi); i++) {
+    counter++;
+  }
+  console.log(counter);
+}
+uzunlik("Saidraxim");
